@@ -16,7 +16,7 @@ public class MockTest {
     private Service serviceMock;
 
     @ParameterizedTest
-    @ValueSource(strings = {"a", "b", "c", "d", "e", "f", "g"})
+    @ValueSource(strings = {"a7", "b7", "c7", "d7", "e7", "f7", "g7"})
     void testWithMock(String value) {
         Helper.test(value, serviceMock);
     }

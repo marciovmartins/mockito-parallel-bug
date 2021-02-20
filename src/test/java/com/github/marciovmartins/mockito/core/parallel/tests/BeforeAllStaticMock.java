@@ -22,7 +22,7 @@ public class BeforeAllStaticMock {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"a", "b", "c", "d", "e", "f", "g"})
+    @ValueSource(strings = {"a5", "b5", "c5", "d5", "e5", "f5", "g5"})
     void testBeforeAllStaticMock(String value) {
         Helper.test(value, beforeAllStaticServiceMock);
     }

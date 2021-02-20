@@ -30,25 +30,25 @@ public class AllTest {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"a", "b", "c", "d", "e", "f", "g"})
+    @ValueSource(strings = {"a1", "b1", "c1", "d1", "e1", "f1", "g1"})
     void testWithMockBean(String value) {
         Helper.test(value, serviceMockBean);
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"a", "b", "c", "d", "e", "f", "g"})
+    @ValueSource(strings = {"a2", "b2", "c2", "d2", "e2", "f2", "g2"})
     void testWithMock(String value) {
         Helper.test(value, serviceMock);
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"a", "b", "c", "d", "e", "f", "g"})
+    @ValueSource(strings = {"a3", "b3", "c3", "d3", "e3", "f3", "g3"})
     void testWithStaticFinalMock(String value) {
         Helper.test(value, staticFinalServiceMock);
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"a", "b", "c", "d", "e", "f", "g"})
+    @ValueSource(strings = {"a4", "b4", "c4", "d4", "e4", "f4", "g4"})
     void testWithBeforeAllStaticMock(String value) {
         Helper.test(value, beforeAllStaticServiceMock);
     }
